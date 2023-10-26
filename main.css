@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: #0067da;
+  padding: 16px;
+  color: #fff;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container h1 {
+  width: 100%;
+  float: left;
+  display: inline;
+  cursor: pointer;
+}
+
+.menu {
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.menu li {
+  margin-right: 36px;
+  list-style: none;
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 0;
+}
+
+.menu li:hover {
+    color: #e6e6e6;
+    cursor: pointer;
+    
+}
+
+.container-flex {
+  display: flex;
+}
+
+#sobre-loja img {
+  max-width: 400px;
+  margin-right: 24px;
+}
+
+section {
+  padding: 48px 0;
+}
+
+section h2 {
+  margin: 16px 0 36px 0;
+}
+
+li p {
+  margin-bottom: 10px;
+}
+
+.list-tenis {
+  flex-wrap: wrap;
+}
+
+.list-tenis li {
+  list-style: none;
+  max-width: 100%;
+  margin-bottom: 24px;
+}
+
+.list-tenis li img {
+  max-width: 100%;
+}
+
+.list-tenis li h3 {
+  margin: 16px 0;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  border: none;
+  background-color: #0067da;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+    background-color: #0150aa;
+}
+
+.list-tenis {
+  display: grid;
+  grid-template-columns: repeat(4, 24.26%);
+  column-gap: 1%;
+  row-gap: 5%;
+}
+
+.container h2 {
+  border-bottom: 2px solid #0067da;
+  padding-bottom: 12px;
+  color: #3867d6;
+  font-style: italic;
+}
+
+@media (max-width: 640px) {
+  .conteudo {
+    display: block;
+  }
+
+  .container {
+    max-width: 90%;
+    display: block;
+  }
+
+  .list-tenis a {
+    display: block;
+    font-size: 1.3em;
+  }
+
+  .list-tenis img {
+    margin-right: 0;
+  }
+
+  .container .list-tenis {
+    margin-bottom: 32px;
+    display: block;
+  }
+
+  #sobre-loja img {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  header .container {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container h1 {
+    float: left;
+    margin: 0;
+  }
+
+  .menu {
+    display: inline;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu li {
+    margin-left: 50px;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .list-tenis {
+    font-size: 1.5em;
+  }
+
+  .list-tenis {
+    grid-template-columns: repeat(2, 49%);
+  }
+
+  .container {
+    display: block;
+  }
+
+  #sobre-loja img {
+    max-width: 90%;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  #sobre-loja h2 {
+    padding-top: 20px;
+  }
+
+  #sobre-loja p {
+    font-size: 1.5em;
+  }
+}
